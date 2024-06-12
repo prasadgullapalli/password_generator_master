@@ -1,35 +1,52 @@
-# Password-Generator
-
-This project is a Java Console Application to generate random passwords and perform password strength checks.
+# Password-Generator: Java Console Application
 
 ## Introduction
 
-I decided to build this project during the Winter Break of my second year after taking the Object-Oriented Effective Java Programming course. I wanted to build something interesting with Java to practice and see what I could do on my own. However, I still wasn't sure what I wanted to do. Then one night, while explaining to my father the importance of having a strong password for his social media accounts, I got the idea of creating a random password generator. A week later, it was done. 
+I developed this project during the Winter Break of my second year after completing the Object-Oriented Effective Java Programming course. My goal was to practice my Java skills by building an interesting project. The idea for a random password generator came to me while explaining to my father the importance of strong passwords for his social media accounts. A week later, the project was completed.
 
-While working on it, I decided to include a password strength checker feature that checks the overall strength of the entered password. I was pretty happy with how it turned out, but I realized that it was not very straightforward to use for someone who does not know how it is supposed to work. So, I decided to create a GUI for the application for the next step, which is available in the Password-Services repository.
+Additionally, I incorporated a password strength checker to evaluate the robustness of the generated passwords. Although I was pleased with the outcome, I realized the application wasn't user-friendly for those unfamiliar with its functionality. As a result, I created a GUI version, which is available in the Password-Services repository.
 
 ## Functionalities
 
-### 1. Generating a Password:
+### 1. Generating a Password
 
-- The user answers with "Yes" or "No" to questions about using uppercase letters, lowercase letters, numbers, or symbols.
-- The user then enters the desired length of the password.
-- A password alphabet is generated based on the user's answers, which is a string containing the chosen characters.
-- Random characters from the password alphabet are selected and combined to form a completely random string according to the user's preferences.
-- The randomly generated password is then displayed on the console.
+The application guides the user through the following steps to create a password:
 
-### 2. Checking a Password's Strength:
+1. **User Preferences:** 
+   - The user answers "Yes" or "No" to questions about including uppercase letters, lowercase letters, numbers, or symbols in the password.
 
-The strength check is based on the following criteria:
-- The password uses uppercase letters.
-- The password uses lowercase letters.
-- The password uses numbers.
-- The password uses symbols.
-- The length of the password is 8 or more (8 is often the minimum required length for a decent password).
-- The length of the password is 16 or more (16 is considered to be the minimum length for a good password).
+2. **Password Length:**
+   - The user specifies the desired length of the password.
 
-These criteria are used to calculate a score for the password, which determines the message displayed to the user indicating the strength of the password (weak/medium/good/great).
+3. **Password Alphabet Creation:**
+   - Based on the user's preferences, a password alphabet is generated, consisting of the selected characters.
 
-### 3. Displaying Useful Information:
+4. **Random Password Generation:**
+   - Random characters from the password alphabet are selected and combined to form a completely random string that meets the user's criteria.
 
-This is a minor feature that displays information for the user on the console about password security, such as avoiding using the same password twice, avoiding character repetition, keyboard patterns, dictionary words, letter or number sequences, etc.
+5. **Display Password:**
+   - The randomly generated password is displayed on the console.
+
+### 2. Checking a Password's Strength
+
+The strength checker evaluates the password based on the following criteria:
+
+- Inclusion of uppercase letters.
+- Inclusion of lowercase letters.
+- Inclusion of numbers.
+- Inclusion of symbols.
+- Password length of 8 or more characters (minimum for a decent password).
+- Password length of 16 or more characters (minimum for a good password).
+
+These criteria are used to calculate a score, which determines the strength message (weak/medium/good/great) displayed to the user.
+
+### 3. Displaying Useful Information
+
+This minor feature provides the user with information on password security practices, such as:
+
+- Avoiding the reuse of passwords.
+- Avoiding character repetition, keyboard patterns, dictionary words, and letter or number sequences.
+
+---
+
+By incorporating these functionalities, the application aims to help users create strong, secure passwords and understand the importance of password security.
